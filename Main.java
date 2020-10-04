@@ -12,26 +12,28 @@ public class Main {
   public static void main(String[] args) {
     // Create scanner for input
     Scanner input = new Scanner(System.in); 
+    
     //ask user for letter grade 
     System.out.println("Please enter a letter grade");
     
-    int mark = input.nextInt(); 
+    String mark = input.nextLine(); 
+     
 
     //get the grade from the user 
     switch (mark) {
-   case 1: 
+   case "a": 
       System.out.println("This is between 80% and 100%");
       break;
-   case 2: 
+   case "b": 
       System.out.println("This is between 70% and 79%");
       break;
-   case 3: 
+   case "c": 
       System.out.println("This is between 60% and 69%");
       break;
-   case 4: 
+   case "d": 
       System.out.println("This is between 50% and 59%");
       break;
-   case 5: 
+   case "f": 
       System.out.println("This is between 0% and 49%");
       break;
  
